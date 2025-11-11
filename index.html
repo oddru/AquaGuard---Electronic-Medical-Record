@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaGuard Electronic Medical Record</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-header">
+    <h1>AquaGuard Electronic Medical Record (EMR)</h1>
+    <a href="records.html" class="records-link">See Patient Records</a>
+  </header>
+
+  <!-- Sidebar + Image Section -->
+  <div class="main-content">
+    <!-- Sidebar Info Panel -->
+    <div class="sidebar">
+      <h2>Information Panel</h2>
+      <small>
+        This panel provides quick insights into common waterborne diseases that often emerge after flooding events in Caraga. 
+        Health workers can use this as a basis for detection, prevention, and community education.
+      </small>
+      <p>‎ </p>
+      <h3>Common Waterborne Diseases</h3>
+      <p><strong>Cholera:</strong> A diarrheal disease caused by contaminated water.</p>
+      <p><strong>Typhoid:</strong> A bacterial infection from contaminated food/water.</p>
+      <p><strong>Dengue:</strong> A viral infection transmitted by mosquitoes.</p>
+      <p><strong>Hepatitis A:</strong> A type of liver infection from ingesting contaminated water/food.</p>
+      <p><em>Note: Mock Data Only, To Reflect Data</em></p>
+    </div>
+
+    <!-- Sidebar Image -->
+    <div class="info-panel-image">
+      <img src="large-tsunami-wave-crashing-into-city.jpg" alt="Waterborne Awareness" class="sidebar-image">
+    </div>
+  </div>
+
+  <!-- Main Dashboard Area -->
+  <div class="main">
+    <h2>Electronic Medical Record Dashboard</h2>
+    <p>Powered By AquaGuard: For Medical Professionals</p>
+    <p> ‎  </p>
+
+    <!-- Add Patient Form -->
+    <div class="form-section">
+      <!-- Logo on the left -->
+      <div class="logo-container">
+        <img src="AquA (2).png" alt="Logo" class="logo-big">
+      </div>
+
+      <!-- Form Card on the right -->
+      <div class="form-card">
+        <h3>Add Patient</h3>
+        <form id="patientForm">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="number" id="age" placeholder="Age" required>
+          <select id="city" required>
+            <option value="" disabled selected>Select City</option>
+            <option>Butuan City</option>
+            <option>Surigao City</option>
+            <option>Tandag City</option>
+            <option>Bayugan City</option>
+            <option>Bislig City</option>
+            <option>Cabadbaran City</option>
+          </select>
+          <select id="diagnosis" required>
+            <option value="" disabled selected>Select Diagnosis</option>
+            <option>Cholera</option>
+            <option>Typhoid</option>
+            <option>Dengue</option>
+            <option>Hepatitis A</option>
+          </select>
+          <input type="date" id="visitDate" required>
+          <button type="submit">Add Patient</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <select id="filterCity">
+        <option value="All" selected>All Cities</option>
+        <option>Butuan City</option>
+        <option>Surigao City</option>
+        <option>Tandag City</option>
+        <option>Bayugan City</option>
+        <option>Bislig City</option>
+        <option>Cabadbaran City</option>
+      </select>
+
+      <select id="filterDisease">
+        <option value="All" selected>All Diseases</option>
+        <option>Cholera</option>
+        <option>Typhoid</option>
+        <option>Dengue</option>
+        <option>Hepatitis A</option>
+      </select>
+
+      <input type="date" id="filterStart">
+      <input type="date" id="filterEnd">
+      <button id="applyFilters">Apply Filters</button>
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="charts-grid">
+      <div class="chart-card"><canvas id="barChart"></canvas></div>
+      <div class="chart-card"><canvas id="pieChart"></canvas></div>
+      <div class="chart-card line-chart"><canvas id="lineChart"></canvas></div>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

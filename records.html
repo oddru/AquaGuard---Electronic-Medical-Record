@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Records - AquaGuard EMR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <h1>Patient Records</h1>
+    <a href="index.html" class="records-link">← Back to Dashboard</a>
+  </header>
+
+  <div class="records-container">
+    <h2>All Registered Patients</h2>
+
+    <!-- Search bar -->
+    <input type="text" id="searchInput" placeholder="Search by name, city, or diagnosis...">
+
+    <!-- Records table -->
+    <div class="table-wrapper">
+      <table id="recordsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Diagnosis</th>
+            <th>Visit Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="records.js"></script>
+</body>
+</html>

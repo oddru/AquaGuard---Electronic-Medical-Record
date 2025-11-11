@@ -1,0 +1,12 @@
+take note of these features/idea: Human Health Module 
+(EMR-Integrated) Cloud-based Electronic Medical Record (EMR) for patient data Community health workers and clinics log symptoms and cases AI-powered symptom checker narrows user inputs to likely waterborne diseases Lab results and confirmed diagnoses are stored in patient EMRs EMR data feeds into real-time public health dashboards
+
+let's narrow down the features Human Health Module 
+(EMR-Integrated) Cloud-based Electronic Medical Record (EMR) for patient data EMR data feeds into real-time public health dashboards:
+
+Cloud-based EMR for patient data
+A system where patient records (name, age, diagnosis, visit history, etc.) 
+are stored and retrieved securely online.
+EMR data feeds into real-time public health dashboards
+Aggregate (non-personal) data from EMRs is visualized 
+in real time — e.g., number of active cases, regional trends, or disease distribution.it would be cool if i can implement some back end elements while remaining an offline prototype
